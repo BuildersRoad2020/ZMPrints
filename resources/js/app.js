@@ -8,7 +8,7 @@ import App from './components/App.vue';
 import Pagination from './components/PaginationComponent.vue';
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'https://zmprints.herokuapp.com/'; //'http://127.0.0.1:8000/';
+//axios.defaults.baseURL = 'https://zmprints.herokuapp.com/'; //'http://127.0.0.1:8000/';
 
 
 

@@ -155,8 +155,8 @@ return [
     |
     */
 
-   // 'domain' => env('SESSION_DOMAIN', null),
-   'domain' => '.zmprints.herokuapp.com',
+    'domain' => env('SESSION_DOMAIN', null),
+   //'domain' => '.zmprints.herokuapp.com',
 
     /*
     |--------------------------------------------------------------------------

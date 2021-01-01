@@ -36620,8 +36620,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-axios__WEBPACK_IMPORTED_MODULE_2___default.a.defaults.withCredentials = true;
-axios__WEBPACK_IMPORTED_MODULE_2___default.a.defaults.baseURL = 'http://127.0.0.1:8000/';
+axios__WEBPACK_IMPORTED_MODULE_2___default.a.defaults.withCredentials = true; //axios.defaults.baseURL = 'https://zmprints.herokuapp.com/'; //'http://127.0.0.1:8000/';
+
 _store_index__WEBPACK_IMPORTED_MODULE_3__["default"].dispatch('getUser').then(() => {
   const app = Object(vue__WEBPACK_IMPORTED_MODULE_0__["createApp"])(_components_App_vue__WEBPACK_IMPORTED_MODULE_4__["default"]);
   app.use(_routes__WEBPACK_IMPORTED_MODULE_1__["default"]);
@@ -37368,7 +37368,7 @@ const store = Object(vuex__WEBPACK_IMPORTED_MODULE_0__["createStore"])({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\xampp\laravel\ZMPrints\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\xampp\laravel\ZM\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })
