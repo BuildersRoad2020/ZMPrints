@@ -23,7 +23,7 @@ class ImageFactory extends Factory
     {
         return [
             'product_id' => Image::factory(),
-            'name' => $this->faker->word,
+            'name' => $this->faker->word . '.jpg',
         ];
     }
 }

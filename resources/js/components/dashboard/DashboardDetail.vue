@@ -63,7 +63,7 @@
         <div class="flex mt-2">
              <h2 class="text-sm title-font text-gray-500 tracking-widest flex mr-auto">Category</h2> <span class="flex mr-4 items-center justify-center px-2 py-2 text-xs font-bold leading-none text-red-100 bg-purple-600 rounded-full" v-for="categories in category" :key="categories.name"> {{categories.name}} </span>
         </div>
-         
+          {{dashboard}}
       </div>
     </div>
   </div>
@@ -80,7 +80,7 @@ export default {
         }
     },
     mounted() {
-        axios.get('api/products/' + this.id).then ( (res) => {
+        axios.get('/api/products/' + this.id).then ( (res) => {
             console.log(res);
             this.dashboard = res.data.data;
             this.category = res.data.data.category;

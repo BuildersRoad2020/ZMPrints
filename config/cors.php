@@ -16,7 +16,7 @@ return [
     */
 
 /*     
-
+ 'paths' => ['api/*'],
     'allowed_methods' => ['*'],
 
     'allowed_origins' => ['*'],
@@ -30,8 +30,8 @@ return [
     'max_age' => 0,
 
     'supports_credentials' => true, */
-    
-    'paths' => ['api/*'],
+
+   
     'supportsCredentials' => true,
 'allowedOrigins' => ['*'],
 'allowedOriginsPatterns' => [],

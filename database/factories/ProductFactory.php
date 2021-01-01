@@ -26,7 +26,8 @@ class ProductFactory extends Factory
             //
             'user_id' => User::factory(),
             'name' => $this->faker->word,
-            'rate' => $this->faker->randomDigit,
+            'rate' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 1, $max = 1000), // 48.8932            ,
+            'details' => $this->faker->sentence($nbWords = 6, $variableNbWords = true),
             'quantity' => $this->faker->randomNumber,
         ];
     }

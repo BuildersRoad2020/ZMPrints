@@ -25,7 +25,7 @@ class ImagesController extends Controller
       $image = new Image; 
       $name = $request->file('image');
       $filename = 'product_id_' . $request->product_id . '_' . time() . '.' . $name->getClientOriginalExtension();
-      $name->storeAs('/public/images', $filename);
+      $name->storeAs('/public', $filename);
       $image->product_id = $request->product_id;
       $image->image = $filename;
       $image->save();

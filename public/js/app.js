@@ -13041,7 +13041,7 @@ __webpack_require__.r(__webpack_exports__);
   },
 
   mounted() {
-    axios.get('api/products/' + this.id).then(res => {
+    axios.get('/api/products/' + this.id).then(res => {
       console.log(res);
       this.dashboard = res.data.data;
       this.category = res.data.data.category;
@@ -13840,7 +13840,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     );
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])])])]);
+  ))]), Object(vue__WEBPACK_IMPORTED_MODULE_0__["createTextVNode"])(" " + Object(vue__WEBPACK_IMPORTED_MODULE_0__["toDisplayString"])($data.dashboard), 1
+  /* TEXT */
+  )])])])]);
 }
 
 /***/ }),
@@ -36620,7 +36622,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-axios__WEBPACK_IMPORTED_MODULE_2___default.a.defaults.withCredentials = true; //axios.defaults.baseURL = 'https://zmprints.herokuapp.com/'; //'http://127.0.0.1:8000/';
+axios__WEBPACK_IMPORTED_MODULE_2___default.a.defaults.withCredentials = true; //axios.defaults.baseURL ='http://127.0.0.1:8000/';
 
 _store_index__WEBPACK_IMPORTED_MODULE_3__["default"].dispatch('getUser').then(() => {
   const app = Object(vue__WEBPACK_IMPORTED_MODULE_0__["createApp"])(_components_App_vue__WEBPACK_IMPORTED_MODULE_4__["default"]);
